@@ -1,9 +1,7 @@
 {
     //This file tells us the setting for compiling and outputing typescript to javascript
     "compilerOptions": {
-      "jsx": "react",
-      "outDir": "./static/frontend",
-      "rootDir": "./src",
+      "jsx": "react-jsx",
       // Target latest version of ECMAScript.
       "target": "esnext",
       // Search under node_modules for non-relative imports.

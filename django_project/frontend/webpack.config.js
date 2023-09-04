@@ -1,11 +1,9 @@
 const path = require("path");
-const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.ts",
-  output: {
-    path: path.resolve(__dirname, "./static/frontend"),
-    filename: "main.js",
+  entry: "./src/index.tsx",
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '...'],
   },
   module: {
     rules: [
@@ -18,18 +16,11 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js', '...'],
+  output: {
+    path: path.resolve(__dirname, "./static/frontend"),
+    filename: "bundle.js",
   },
   optimization: {
     minimize: true,
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      "process.env": {
-        // This has effect on the react lib size
-        NODE_ENV: JSON.stringify("production"),
-      },
-    }),
-  ],
 };
