@@ -8,7 +8,7 @@ Practise on Django-React Typescript for educational and experimental purposes. T
 
 2) Ensure [pip3](https://cloudzy.com/blog/pip-upgrade/) has been installed on your local systsm before proceeding any further. 
 
-3) Ensure [npm] (https://kinsta.com/blog/how-to-install-node-js/)has been installed on your local systsm before proceeding any further. 
+3) Ensure [npm](https://kinsta.com/blog/how-to-install-node-js/) has been installed on your local systsm before proceeding any further. 
 
 4) Create a new directory on your system so that it is easier to locate the files when developing the application.
 
